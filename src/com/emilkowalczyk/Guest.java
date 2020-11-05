@@ -32,4 +32,12 @@ public class Guest {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void displayGuestInformation(){
+        System.out.println("Imię: "+name);
+        System.out.println("Preferowany posiłek: "+ meal);
+        System.out.println("Numer telefonu: " + phoneNumber);
+        String isVeganString = isVegan ? " tak" : " nie";
+        System.out.println("Weganin?" + isVeganString);
+    }
 }
